@@ -1,0 +1,164 @@
+body, div, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: .5s;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #102a41;
+    color: #ffffff;
+}
+
+.lang {
+    margin-right: 20px;
+}
+
+.english {
+    margin-left: 10px;
+    transition: .5s;
+}
+
+.russian {
+    margin-right: 10px;
+    transition: .5s;
+    
+}
+
+.english:hover, .russian:hover {
+    color: #72a8d8;
+    cursor: pointer;
+}
+
+main {
+    width: 100%;
+    height: calc(100% - 100px);
+    position: relative;
+}
+
+.wrap {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    max-width: 100%;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.image {
+    margin-bottom: 20px;
+}
+
+.main_image {
+    max-height: 150px;
+}
+
+.btn {
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #102a41;
+    color: #ffffff;
+    padding: 10px 20px;
+    transition: .5s;
+}
+
+.btn:hover {
+    background-color: #72a8d8;
+    cursor: pointer;
+}
+
+.phrase {
+    color: #102a41;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+@media (max-width: 700px) {
+    .image {
+        display: none;
+    }
+    .phrase {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+    }
+}
+
+@media (max-height: 400px) {
+    .image {
+        display: none;
+    }
+    .phrase {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+    }
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #102a41;
+    color: #ffffff;
+}
+
+.left {
+    margin-left: 20px;
+}
+
+.left span {
+    margin-right: 10px;
+}
+
+.github_link {
+    transition: .5s;
+}
+
+.github_link:hover {
+    color: #72a8d8;
+    cursor: pointer;
+
+}
+
+.right {
+    margin-right: 20px;
+}
+
+.rolling_link {
+    display: block;
+    background-image: url(image/rs_school_js.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25px;
+    width: 66px;
+    transition: .5s;
+}
+
+.rolling_link:hover {
+    filter: invert(100%) sepia(6%) saturate(23%) hue-rotate(96deg) brightness(104%) contrast(107%);
+}
