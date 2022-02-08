@@ -1,10 +1,9 @@
-const url = 'https://type.fit/api/quotes';
-
 async function getData() {
-    const res = await fetch(url);
+    const quotes = 'data_ru.json';
+    const res = await fetch(quotes);
     const data = await res.json();
-    // console.log(data[2].author);
-    showData(data[2].text)
+
+    showData(data[Math.floor(Math.random() * 100)].text)
   }
 
 function showData(data) {
