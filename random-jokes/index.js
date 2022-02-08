@@ -1,10 +1,17 @@
 async function getData() {
-    const quotes = 'data_ru.json';
-    const res = await fetch(quotes);
-    const data = await res.json();
+    const quotesRu = 'data_ru.json';
+    const resRu = await fetch(quotesRu);
+    const data = await resRu.json();
+
+    const btn = document.querySelector('.btn');
+
+    btn.addEventListener('click', function changeData() {
+        document.getElementById("phrase").textContent = data[Math.floor(Math.random() * 100)].text
+    });
 
     showData(data[Math.floor(Math.random() * 100)].text)
   }
+
 
 function showData(data) {
     document.getElementById("phrase").textContent = data
