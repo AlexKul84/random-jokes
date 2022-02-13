@@ -69,15 +69,17 @@ main {
 }
 
 .image {
-    margin-bottom: 20px;
-}
-
-.main_image {
-    max-height: 150px;
+    height: 131px;
+    width: 80px;
+    margin: 0 auto 20px auto;
+    background-image: url(image/chuck.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: .5s;
 }
 
 .active_image {
-    background-color: #102a41;
+    transform: rotate(360deg);
 }
 
 .btn {

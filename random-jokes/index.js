@@ -1,6 +1,6 @@
 const english = document.querySelector('.english');
 const russian = document.querySelector('.russian');
-const main_image = document.querySelector('.main_image');
+const image = document.querySelector('.image');
 const btn = document.querySelector('.btn');
 
 // russian.addEventListener('click', function switchToRussian(event) {
@@ -34,7 +34,7 @@ async function getDataEn() {
 }
 
 btn.addEventListener('click', function changeData() {
-    main_image.classList.toggle('active_image')
+    image.classList.toggle('active_image')
 });
 
 russian.addEventListener('click', getDataRu)
