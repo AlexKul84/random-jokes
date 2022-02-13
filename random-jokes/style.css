@@ -76,6 +76,10 @@ main {
     max-height: 150px;
 }
 
+.active_image {
+    background-color: #102a41;
+}
+
 .btn {
     margin-bottom: 20px;
     border: none;
