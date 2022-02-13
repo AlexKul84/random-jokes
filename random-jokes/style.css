@@ -44,6 +44,10 @@ header {
     
 }
 
+.active {
+    color: #72a8d8;
+}
+
 .english:hover, .russian:hover {
     color: #72a8d8;
     cursor: pointer;
